@@ -12,7 +12,28 @@ https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
 	}) }}
 {% endblock %}
 
-{% block footer %}
-	{% from "hmlr/components/footer/macro.njk" import hmlrFooter %}
-    {{ hmlrFooter({}) }}
- {% endblock %}
+ {% block footer %}
+    {% from "hmlr/components/footer/macro.njk" import hmlrFooter %}
+    {{ hmlrFooter({
+        meta: {
+            items: [
+                {
+                    href: "#",
+                    text: "Privacy"
+                },
+                {
+                    href: "#",
+                    text: "Accessibility"
+                },
+                {
+                    href: "#",
+                    text: "Cookies"
+                },
+                {
+                    href: "#",
+                    text: "Terms and conditions"
+                }
+            ]
+        }
+    }) }}
+{% endblock %}
