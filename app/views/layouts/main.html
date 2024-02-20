@@ -4,3 +4,15 @@ https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
 #}
 
 {% extends "govuk-prototype-kit/layouts/govuk-branded.njk" %}
+
+{% block header %}
+	{% from "hmlr/components/header/macro.njk" import hmlrHeader %}
+	{{ hmlrHeader({
+	  serviceName: "HMLR Prototype Kit"
+	}) }}
+{% endblock %}
+
+{% block footer %}
+	{% from "hmlr/components/footer/macro.njk" import hmlrFooter %}
+    {{ hmlrFooter({}) }}
+ {% endblock %}
