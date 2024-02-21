@@ -3,12 +3,12 @@ For guidance on how to use layouts see:
 https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
 #}
 
-{% extends "govuk-prototype-kit/layouts/govuk-branded.njk" %}
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
 
 {% block header %}
 	{% from "hmlr/components/header/macro.njk" import hmlrHeader %}
 	{{ hmlrHeader({
-	  serviceName: "HMLR Prototype Kit"
+	  serviceName: serviceName
 	}) }}
 {% endblock %}
 
