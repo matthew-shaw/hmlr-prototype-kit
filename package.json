@@ -6,7 +6,7 @@
   },
   "dependencies": {
     "@govuk-prototype-kit/common-templates": "2.0.1",
-    "@hmlr/frontend": "1.4.0-rc.2",
+    "@hmlr/frontend": "1.4.0",
     "govuk-frontend": "4.8.0",
     "govuk-prototype-kit": "13.16.0"
   }
