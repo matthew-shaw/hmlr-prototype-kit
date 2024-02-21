@@ -13,6 +13,6 @@ nvm use
 # Install dependencies
 npm install
 
-# Start Storybook
+# Run the kit
 npm run dev
 ```
